@@ -1,0 +1,45 @@
+.navbar {
+  background-color: #800000 !important;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+/* Center the header text */
+.navbar-brand {
+  flex: 0 1 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Align navigation links to the right */
+#navbarNav {
+  flex: 0 1 auto;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.navbar {
+  padding: 10px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  margin-left: 15px;
+}
+
+a {
+  text-decoration: none !important;
+  font-size: larger;
+}
