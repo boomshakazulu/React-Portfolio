@@ -35,6 +35,10 @@
   padding: 10px;
 }
 
+.navbar-nav {
+  margin-right: 30px;
+}
+
 .navbar-nav .nav-link {
   color: #fff;
   margin-left: 15px;
