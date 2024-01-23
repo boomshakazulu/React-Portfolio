@@ -1,0 +1,33 @@
+#about {
+  background-color: #242424;
+  padding: 80px 150px 0px 150px; /* Added margin on the left and right */
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.text-muted {
+  font-size: 1.2rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* Additional styles for spacing between paragraphs */
+.text-muted + .text-muted {
+  margin-top: 20px;
+}
+
+.profile-picture-container {
+  margin-bottom: 30px;
+}
+
+.profile-picture {
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff; /* Optional border styling */
+}
