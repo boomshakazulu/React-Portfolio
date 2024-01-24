@@ -1,13 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import GithubPic from "../assets/Contact/github.webp";
 import EmailPic from "../assets/Contact/emailIcon.png";
 import LinkedPic from "../assets/Contact/LinkedIn_logo_initials.png";
 import "./Styling/Footer.css"; // Import the CSS file
 
 export default function Foot() {
+  const [isSticky, setIsSticky] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    function handleStickyFooter() {
+      const footer = document.querySelector(".footer");
+      const isDocumentHeightLessThanOrEqualToWindow =
+        document.documentElement.scrollHeight <= window.innerHeight;
+      const isScrolledToBottom =
+        window.scrollY + window.innerHeight >=
+        document.documentElement.scrollHeight - footer.offsetHeight;
+
+      setIsSticky(
+        isDocumentHeightLessThanOrEqualToWindow && isScrolledToBottom
+      );
+    }
+
+    // Initial check
+    handleStickyFooter();
+
+    // Recalculate on window resize
+    window.addEventListener("resize", handleStickyFooter);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("resize", handleStickyFooter);
+    };
+  }, [location.pathname]); // Run when the pathname changes
+
   return (
-    <footer className="footer">
-      <div className="container text-center">
+    <footer className={`footer ${isSticky ? "sticky-footer" : ""}`}>
+      <div className="footContainer text-center">
         <div className="row">
           <div className="col">
             <a

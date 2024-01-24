@@ -1,6 +1,6 @@
 #about {
   background-color: #242424;
-  padding: 80px 150px 0px 150px; /* Added margin on the left and right */
+  padding: 80px 150px 150px 150px; /* Adjusted padding on the bottom */
 }
 
 .section-heading {

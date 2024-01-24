@@ -6,7 +6,7 @@ import App from "./App.jsx";
 import AboutPage from "./pages/About.jsx";
 import ContactPage from "./pages/Contact.jsx";
 import ErrorPage from "./pages/Error.jsx";
-import PorfolioPage from "./pages/Portfolio.jsx";
+import PortfolioPage from "./pages/Portfolio.jsx";
 import ResumePage from "./pages/Resume.jsx";
 
 const router = createBrowserRouter([
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/Portfolio",
-        element: <PorfolioPage />,
+        element: <PortfolioPage />,
       },
       {
         path: "/Resume",

@@ -37,7 +37,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div>
+    <div className="contact-form">
       <h2>Contact Me</h2>
       <form onSubmit={handleSubmit}>
         <div>
