@@ -8,7 +8,8 @@ import "./Styling/Footer.css"; // Import the CSS file
 export default function Foot() {
   const [isSticky, setIsSticky] = useState(false);
   const location = useLocation();
-
+  //sets the page to stick so if the page is shorter the the viewheight the footer will remain stuck to the bottom.
+  //removes sticky when the page is longer the viewheight to prevent the footer from blocking content
   useEffect(() => {
     function handleStickyFooter() {
       const footer = document.querySelector(".footer");
@@ -33,7 +34,7 @@ export default function Foot() {
     return () => {
       window.removeEventListener("resize", handleStickyFooter);
     };
-  }, [location.pathname]); // Run when the pathname changes
+  }, [location.pathname]); // Run when the pathname changes. This part is critical
 
   return (
     <footer className={`footer ${isSticky ? "sticky-footer" : ""}`}>

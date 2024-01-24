@@ -8,7 +8,7 @@ import noSQLPic from "../assets/Projects/nosql.png";
 import ecomPic from "../assets/Projects/e-commerce.png";
 
 import "../components/Styling/PorfolioPage.css";
-
+//every 2 projects are wrapped in a row div for styling
 export default function PortfolioPage() {
   return (
     <div className="portfolio-page">
@@ -57,7 +57,7 @@ export default function PortfolioPage() {
           />
         </div>
 
-        {/* Add more Project components with different project details */}
+        {/* Add more Project components with different project details here when needed*/}
       </div>
     </div>
   );

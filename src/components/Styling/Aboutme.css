@@ -1,6 +1,6 @@
 #about {
   background-color: #242424;
-  padding: 80px 150px 150px 150px; /* Adjusted padding on the bottom */
+  padding: 80px 150px 150px 150px;
 }
 
 .section-heading {
@@ -25,9 +25,9 @@
 }
 
 .profile-picture {
-  width: 150px; /* Adjust the width as needed */
-  height: 150px; /* Adjust the height as needed */
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #fff; /* Optional border styling */
+  border: 2px solid #fff;
 }

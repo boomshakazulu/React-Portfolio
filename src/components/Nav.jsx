@@ -1,25 +1,45 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Navbar from "./UI/Navbar";
 import "./Styling/Nav.css";
-
+//the use of NavLink instead of normal link helped with the active classes for styling based on current page
 export default function Nav() {
   return (
     <>
       <Navbar
         links={[
-          <Link key={1} className="nav-link" to="/">
+          <NavLink
+            key={1}
+            className="nav-link"
+            to="/"
+            activeclassname="active-link"
+          >
             About Me
-          </Link>,
-          <Link key={2} className="nav-link" to="/Portfolio">
+          </NavLink>,
+          <NavLink
+            key={2}
+            className="nav-link"
+            to="/Portfolio"
+            activeclassname="active-link"
+          >
             Portfolio
-          </Link>,
-          <Link key={3} className="nav-link" to="/Contact">
+          </NavLink>,
+          <NavLink
+            key={3}
+            className="nav-link"
+            to="/Contact"
+            activeclassname="active-link"
+          >
             Contact
-          </Link>,
-          <Link key={4} className="nav-link" to="/Resume">
+          </NavLink>,
+          <NavLink
+            key={4}
+            className="nav-link"
+            to="/Resume"
+            activeclassname="active-link"
+          >
             Resume
-          </Link>,
+          </NavLink>,
         ]}
       />
     </>

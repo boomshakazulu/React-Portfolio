@@ -1,0 +1,49 @@
+.language-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.language-badges img {
+  width: 100px;
+  height: 120px;
+}
+
+.download-button {
+  font-size: 20px;
+  color: #007bff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.download-button:hover {
+  text-decoration: underline;
+}
+
+.proficiencies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.proficiencies h2 {
+  width: 100%;
+  text-align: left;
+  margin-left: 100px;
+  height: 10px;
+  text-decoration: underline;
+}
+
+.proficiencies li {
+  margin-left: 110px;
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+.resume-page {
+  margin-bottom: 50px;
+}

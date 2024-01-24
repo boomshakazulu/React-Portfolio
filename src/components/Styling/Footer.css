@@ -4,8 +4,8 @@ body {
 }
 
 .content {
-  min-height: calc(100vh - 70px); /* Adjust the footer height accordingly */
-  padding-bottom: 70px; /* Adjust the footer height accordingly */
+  min-height: calc(100vh - 70px);
+  padding-bottom: 70px;
 }
 
 .footer {
@@ -20,8 +20,7 @@ body {
 .sticky-footer {
   position: fixed;
   bottom: 0;
-  z-index: 1000; /* Adjust as needed */
-  /* Add any other styles for sticky footer */
+  z-index: 1000;
 }
 
 .row {
@@ -55,7 +54,6 @@ body {
   filter: grayscale(0%);
 }
 
-/* Media query for small screens */
 @media (max-width: 767px) {
   .col {
     flex: 0 0 30%;

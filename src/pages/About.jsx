@@ -18,15 +18,15 @@ export default function AboutPage() {
             </div>
             <p className="text-muted">
               Hi, I'm Dallon Lahoda, a passionate and creative Full Stack
-              Developer based in Utah. With a strong background in web
+              Developer based in Utah, with a strong background in web
               development and a keen eye for design, I love to create seamless
               and engaging digital experiences.
             </p>
             <p className="text-muted">
-              My journey in the world of coding began at the University of Utah
-              coding bootcamp in August of 2023. I've had the opportunity to
-              work on various projects, honing my skills in technologies like
-              React, Node.js, and more.
+              My journey in the world of web development began at the University
+              of Utah coding bootcamp in August of 2023. I've had the
+              opportunity to work on various projects, honing my skills in
+              technologies like React, Node.js, and more.
             </p>
             <p className="text-muted">
               My approach to development is focused on writing clean, efficient,
