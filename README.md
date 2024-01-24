@@ -42,7 +42,7 @@ After installing npm packages, the application will be invoked by using the foll
 * ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 * ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 * ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-* ![React]([https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB))  
+* ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)  
 ---
 
 ## License
