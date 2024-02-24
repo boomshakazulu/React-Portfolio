@@ -5,7 +5,7 @@ import techBlogPic from "../assets/Projects/Techblog.png";
 import moviePic from "../assets/Projects/movieknight.png";
 import txtEditPic from "../assets/Projects/txtEdit.png";
 import noSQLPic from "../assets/Projects/nosql.png";
-import ecomPic from "../assets/Projects/e-commerce.png";
+import esportsPic from "../assets/Projects/esports.png";
 
 import "../components/Styling/PorfolioPage.css";
 //every 2 projects are wrapped in a row div for styling
@@ -16,44 +16,44 @@ export default function PortfolioPage() {
       <div className="projects-container">
         <div className="project-row">
           <Project
+            title="E-Sports Tracker"
+            imageSrc={esportsPic}
+            deployedLink="https://e-sports-tracker-b9n7.onrender.com/"
+            githubLink="https://github.com/Ricochet227/E-Sports-Tracker"
+          />
+          <Project
             title="Super Basic Minigames"
             imageSrc={gamesPic}
             deployedLink="https://super-basic-minigames-a6389a9aca89.herokuapp.com/"
             githubLink="https://github.com/shawncrook411/minigame"
           />
+        </div>
+        <div className="project-row">
           <Project
             title="Tech Blog"
             imageSrc={techBlogPic}
             deployedLink="https://mysterious-atoll-43997-fe4bfa4a1235.herokuapp.com/"
             githubLink="https://github.com/boomshakazulu/tech-blog"
           />
-        </div>
-        <div className="project-row">
           <Project
             title="Movie Knight"
             imageSrc={moviePic}
             deployedLink="https://cpulsipher24.github.io/Movie-Knight/index.html"
             githubLink="https://github.com/cpulsipher24/Movie-Knight"
           />
+        </div>
+        <div className="project-row">
           <Project
             title="Text Editor(PWA)"
             imageSrc={txtEditPic}
             deployedLink="https://text-editor-pwa-vtnm.onrender.com/"
             githubLink="https://github.com/boomshakazulu/Text-Editor-PWA-"
           />
-        </div>
-        <div className="project-row">
           <Project
             title="NoSQL-Social-Network-API (No frontend)"
             imageSrc={noSQLPic}
             deployedLink="https://github.com/boomshakazulu/NoSQL-Social-Network-API"
             githubLink="https://github.com/boomshakazulu/NoSQL-Social-Network-API"
-          />
-          <Project
-            title="E-commerce Backend (No frontend)"
-            imageSrc={ecomPic}
-            deployedLink="https://github.com/boomshakazulu/e-commerce-backend?tab=readme-ov-file"
-            githubLink="https://github.com/boomshakazulu/e-commerce-backend?tab=readme-ov-file"
           />
         </div>
 
