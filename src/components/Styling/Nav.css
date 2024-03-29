@@ -25,19 +25,13 @@
   transform: translateX(-50%);
 }
 
-#navbarNav {
-  width: 100%;
-}
-
 .navbar-nav {
-  display: flex;
-  justify-content: space-around;
-  padding: 0px;
-  width: 100%;
+  margin-right: 30px;
 }
 
 .navbar-nav .nav-link {
   color: #fff;
+  margin-left: 15px;
 }
 
 a {
@@ -64,6 +58,18 @@ a {
   }
 
   .navbar-nav .nav-link {
+    margin: 0px;
+  }
+
+  #navbarNav {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    width: 100%;
   }
 }
 #navbarNav {
