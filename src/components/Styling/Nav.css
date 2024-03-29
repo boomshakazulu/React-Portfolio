@@ -25,13 +25,19 @@
   transform: translateX(-50%);
 }
 
+#navbarNav {
+  width: 100%;
+}
+
 .navbar-nav {
-  margin-right: 30px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
+  width: 100%;
 }
 
 .navbar-nav .nav-link {
   color: #fff;
-  margin-left: 15px;
 }
 
 a {
