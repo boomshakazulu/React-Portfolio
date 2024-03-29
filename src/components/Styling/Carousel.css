@@ -7,6 +7,11 @@
   overflow: hidden; /* Hide potential overflow */
 }
 
+.carousel {
+  max-width: 1000px; /* Limit the width of the carousel to 1000px */
+  width: 100%; /* Ensure the carousel fills its container */
+}
+
 .carousel-container .slick-dots li {
   display: inline-block;
   margin: 0 5px; /* Adjust spacing between dots as needed */
