@@ -12,6 +12,7 @@ export default function ContactPage() {
   const [name, setName] = useState("");
   const [content, setContent] = useState("");
   const [error, setError] = useState("");
+  const [submissionStatus, setSubmissionStatus] = useState(null);
   //calidate email, name and content fields
   const validateForm = () => {
     if (!email) {
@@ -36,11 +37,19 @@ export default function ContactPage() {
     e.preventDefault();
 
     if (validateForm()) {
-      emailjs.sendForm(serviceId, template, e.target, key);
-      console.log("Form submitted:", { email, name, content });
-      setEmail("");
-      setContent("");
-      setName("");
+      emailjs
+        .sendForm(serviceId, template, e.target, key)
+        .then(() => {
+          console.log("Form submitted:", { email, name, content });
+          setEmail("");
+          setContent("");
+          setName("");
+          setSubmissionStatus("success");
+        })
+        .catch((error) => {
+          console.error("Error submitting form:", error);
+          setSubmissionStatus("error");
+        });
     }
   };
 
@@ -77,42 +86,49 @@ export default function ContactPage() {
   }, [handleInputChange, validateForm]);
 
   return (
-    <div className="contact-form">
-      <h2>Contact Me</h2>
-      <form ref={form} onSubmit={handleSubmit}>
-        <label>Email:</label>
-        <input
-          type="email"
-          name="user_email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          onBlur={validateForm}
-          required
-        />
-        <label>Name:</label>
-        <input
-          type="text"
-          name="user_name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          onBlur={validateForm}
-          required
-        />
-        <label>Content:</label>
-        <textarea
-          value={content}
-          name="message"
-          onChange={(e) => setContent(e.target.value)}
-          onBlur={validateForm}
-          required
-        ></textarea>
-        {error && <p>{error}</p>}
-        {error ? null : (
-          <button type="submit" value="Send">
-            Submit
-          </button>
+    <div className="contact-container">
+      <div className="contact-form">
+        <h2>Contact Me</h2>
+        {submissionStatus === "success" && (
+          <p style={{ color: "green" }}>
+            Request received! I'll get back to you shortly
+          </p>
         )}
-      </form>
+        <form ref={form} onSubmit={handleSubmit}>
+          <label>Email:</label>
+          <input
+            type="email"
+            name="user_email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            onBlur={validateForm}
+            required
+          />
+          <label>Name:</label>
+          <input
+            type="text"
+            name="user_name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            onBlur={validateForm}
+            required
+          />
+          <label>Content:</label>
+          <textarea
+            value={content}
+            name="message"
+            onChange={(e) => setContent(e.target.value)}
+            onBlur={validateForm}
+            required
+          ></textarea>
+          {error && <p>{error}</p>}
+          {error ? null : (
+            <button type="submit" value="Send">
+              Submit
+            </button>
+          )}
+        </form>
+      </div>
     </div>
   );
 }

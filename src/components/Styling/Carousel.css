@@ -1,0 +1,68 @@
+.carousel-container {
+  position: relative;
+  width: fit-content; /* Adjust width to fit content */
+  max-width: 100%; /* Ensure carousel doesn't overflow container */
+  margin: 0 auto; /* Center the carousel */
+  padding-bottom: 70px; /* Adjust padding as needed */
+  overflow: hidden; /* Hide potential overflow */
+}
+
+.carousel-container .slick-dots li {
+  display: inline-block;
+  margin: 0 5px; /* Adjust spacing between dots as needed */
+}
+
+.carousel-container .slick-dots li button {
+  font-size: 10px; /* Adjust dot size as needed */
+  background-color: transparent;
+  border: 1px solid #fff; /* Adjust dot border as needed */
+  border-radius: 50%;
+  width: 10px; /* Adjust dot size as needed */
+  height: 10px; /* Adjust dot size as needed */
+  outline: none;
+}
+
+.carousel-container .slick-dots li button:hover {
+  background-color: #fff; /* Adjust dot hover color as needed */
+}
+
+.carousel-container .slick-dots li.slick-active button {
+  background-color: #fff; /* Adjust active dot color as needed */
+}
+
+.carousel-container .slick-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 100%; /* Ensure the image does not exceed the container height */
+  object-fit: cover; /* Adjust object-fit as needed */
+  aspect-ratio: 16 / 9; /* Enforce 16:9 aspect ratio */
+}
+
+@media (max-width: 992px) {
+  .carousel-container {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 992px) and (orientation: landscape) {
+  .carousel-container {
+    height: auto; /* Reset height */
+  }
+
+  .carousel-container .carousel {
+    transform: scale(0.5); /* Scale the carousel */
+    transform-origin: top; /* Set the origin of transformation to the top */
+  }
+
+  .carousel-container {
+    height: 60vh; /* Adjust height to match scaled carousel */
+  }
+  .carousel-container .slick-dots li button {
+    width: 30px; /* Adjust dot size as needed */
+    height: 30px; /* Adjust dot size as needed */
+    border-radius: 50%;
+  }
+  .carousel-container .slick-dots li {
+    margin-left: 30px;
+  }
+}

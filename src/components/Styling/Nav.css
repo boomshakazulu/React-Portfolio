@@ -12,9 +12,10 @@
   flex-direction: row-reverse;
   justify-content: flex-start;
   position: relative;
-  width: 100%;
+  width: 100% !important;
   align-items: center;
   flex-wrap: nowrap;
+  overflow: hidden;
 }
 /* Center the header text */
 .navbar-brand {
@@ -22,17 +23,6 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-}
-
-/* Align navigation links to the right */
-.navbar {
-  flex: 0 1 auto;
-  margin-left: auto;
-  margin-right: 50px;
-}
-
-.navbar {
-  padding: 10px;
 }
 
 .navbar-nav {
@@ -54,7 +44,7 @@ a {
   font-weight: bold; /* Bold text for the active link, adjust as needed */
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
   .navbar {
     flex-direction: column;
     align-items: center;

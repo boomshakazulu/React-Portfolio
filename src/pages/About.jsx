@@ -1,13 +1,15 @@
 import React from "react";
 import "../components/Styling/Aboutme.css";
 import profilePicture from "../assets/Profile/portfolioIMG.jpg";
+import Carousel from "../components/Carousel";
 
 export default function AboutPage() {
   return (
     <section id="about" className="section">
+      <Carousel />
       <div className="container">
         <div className="row">
-          <div className="col-lg-8 mx-auto">
+          <div className="col-lg-8 mx-auto text-container">
             <h2 className="section-heading">About Me</h2>
             <div className="profile-picture-container">
               <img

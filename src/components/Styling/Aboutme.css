@@ -7,6 +7,7 @@
   font-size: 2.5rem;
   color: #fff;
   margin-bottom: 30px;
+  margin-top: 0px;
 }
 
 .text-muted {
@@ -30,4 +31,24 @@
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #fff;
+}
+
+@media (max-width: 992px) {
+  .text-container {
+    padding-top: 15px;
+    width: 100%;
+  }
+  #about {
+    max-width: 100%;
+    padding: 0px !important;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 992px) and (orientation: landscape) {
+  #about {
+    padding-left: 10px; /* Add left padding */
+    padding-right: 10px; /* Add right padding */
+  }
 }

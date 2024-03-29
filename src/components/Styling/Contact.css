@@ -2,9 +2,18 @@
   text-align: center;
 }
 
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+
 .contact-form {
-  max-width: 400px;
-  margin: 0 auto;
+  width: 500px;
+}
+
+.contact-form form {
+  max-width: 100%;
+  padding-bottom: 20px;
 }
 
 .contact-form div {
@@ -14,6 +23,7 @@
 .contact-form label {
   display: block;
   margin-bottom: 5px;
+  padding-top: 10px;
 }
 
 .contact-form input,
@@ -41,5 +51,9 @@
 @media only screen and (max-width: 767px) {
   .contact-form {
     max-width: 100%;
+  }
+  .contact-form {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import PdfResume from "../assets/Resume/Placeholderresume.pdf";
 import "../components/Styling/Resume.css";
 import HTMLBadge from "../assets/Badges/html5.png";
 import cssBadge from "../assets/Badges/css.png";
@@ -30,9 +29,8 @@ export default function ContactPage() {
   //function to download the pdf resume
   const downloadResume = () => {
     const element = document.createElement("a");
-    const file = new Blob([<PdfResume />], { type: "application/pdf" });
-    element.href = URL.createObjectURL(file);
-    element.download = "Your_Resume.pdf";
+    element.href = "/Resume/Dallonresume.docx"; // Direct URL to the file
+    element.download = "Dallon's_Resume.docx";
     document.body.appendChild(element); // Required for this to work in Firefox
     element.click();
     document.body.removeChild(element);
